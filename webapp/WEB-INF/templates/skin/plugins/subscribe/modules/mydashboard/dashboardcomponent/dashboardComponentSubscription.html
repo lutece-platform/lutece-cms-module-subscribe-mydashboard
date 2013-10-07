@@ -1,0 +1,24 @@
+<legend>#i18n{module.subscribe.mydashboard.mydashboardComponentSubscription.title}</legend>
+<div>
+	<table class="table table-stripped">
+		<#list list_subscription_dto as subscription_dto>
+			<tr>
+				<td>
+					${subscription_dto.htmlSubscription}
+				</td>
+				<td>
+					<#if subscription_dto.urlModify?? && subscription_dto.urlModify?has_content>
+						<a class="btn btn-primary btn-small" title="#i18n{portal.util.labelModify}" href="${subscription_dto.urlModify}">
+							<i class="icon-trash icon-white">&nbsp;</i>
+						</a>
+					</#if>
+					<#if subscription_dto.removable>
+						<a class="btn btn-danger btn-small" title="#i18n{portal.util.labelDelete}" href="jsp/site/Portal.jsp?page=subscribe-mydashboard&action=confirmRemoveSubscription&idSubscription=${subscription_dto.idSubscription}">
+							<i class="icon-trash icon-white">&nbsp;</i>
+						</a>
+					</#if>
+				</td>
+			</tr>
+		</#list>
+	</table>
+</div>
