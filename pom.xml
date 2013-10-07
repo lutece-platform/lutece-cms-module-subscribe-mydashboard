@@ -40,6 +40,11 @@
     <properties>
         <componentName>subscribe-mydashboard</componentName>
         <jiraProjectName>SUBMYDASH</jiraProjectName>
-        <jiraComponentId></jiraComponentId>
+        <jiraComponentId>12263</jiraComponentId>
     </properties>
+    <scm>
+        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/module-subscribe-mydashboard</connection>
+        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/module-subscribe-mydashboard</developerConnection>
+        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/cms/module-subscribe-mydashboard</url>
+    </scm>
 </project>
