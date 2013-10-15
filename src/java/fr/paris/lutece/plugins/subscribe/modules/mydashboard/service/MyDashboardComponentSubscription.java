@@ -49,7 +49,7 @@ public class MyDashboardComponentSubscription extends MyDashboardComponent
             {
                 SubscriptionService subscriptionService = SubscriptionService.getInstance( );
                 SubscriptionFilter filter = new SubscriptionFilter( );
-                filter.setIdSubscriber( subscriptionService.getIdSubscriberFromLuteceUser( user ) );
+                filter.setIdSubscriber( user.getName( ) );
                 List<Subscription> listSubscription = subscriptionService.findByFilter( filter );
                 List<SubscriptionDTO> listSubscriptionDto = new ArrayList<SubscriptionDTO>( listSubscription.size( ) );
                 for ( Subscription subscription : listSubscription )

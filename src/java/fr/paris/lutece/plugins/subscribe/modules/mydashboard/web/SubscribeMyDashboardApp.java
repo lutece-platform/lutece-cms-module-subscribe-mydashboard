@@ -76,10 +76,8 @@ public class SubscribeMyDashboardApp extends MVCApplication
             int nIdSubscription = Integer.parseInt( strIdSubscription );
             LuteceUser user = SecurityService.getInstance( ).getRegisteredUser( request );
             Subscription subscription = SubscriptionService.getInstance( ).findBySubscriptionId( nIdSubscription );
-            if ( user != null
-                    && subscription != null
-                    && subscription.getIdSubscriber( ) == SubscriptionService.getInstance( )
-                            .getIdSubscriberFromLuteceUser( user ) )
+            if ( user != null && subscription != null
+                    && StringUtils.equals( subscription.getUserId( ), user.getName( ) ) )
             {
                 SubscriptionService.getInstance( ).removeSubscription( nIdSubscription, true );
             }
