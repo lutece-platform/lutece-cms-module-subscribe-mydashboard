@@ -19,10 +19,6 @@
     </admin-features>    
   	<!-- XPages parameters -->
     <applications>
-    	<application>
-            <application-id>subscribe-mydashboard</application-id>
-            <application-class>fr.paris.lutece.plugins.subscribe.modules.mydashboard.web.SubscribeMyDashboardApp</application-class>
-        </application>
     </applications>
 	<!-- Portlet parameters -->
     <portlets>
