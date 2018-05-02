@@ -1,18 +1,15 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-
     <parent>
-        <artifactId>lutece-plugins-pom</artifactId>
-        <groupId>fr.paris.lutece.plugins</groupId>
-        <version>3.2</version>
+        <artifactId>lutece-global-pom</artifactId>
+        <groupId>fr.paris.lutece.tools</groupId>
+        <version>3.0.12</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.paris.lutece.plugins</groupId>
     <artifactId>module-subscribe-mydashboard</artifactId>
     <packaging>lutece-plugin</packaging>
     <version>1.0.1-SNAPSHOT</version>
     <name>Lutece Subscribe MyDashboard module</name>
-
     <repositories>
         <repository>
             <id>lutece</id>
@@ -21,7 +18,6 @@
             <layout>default</layout>
         </repository>
     </repositories>
-
     <dependencies>
         <dependency>
             <groupId>fr.paris.lutece.plugins</groupId>
@@ -29,22 +25,21 @@
             <version>[1.0.0-SNAPSHOT,)</version>
             <type>lutece-plugin</type>
         </dependency>
-         <dependency>
+        <dependency>
             <groupId>fr.paris.lutece.plugins</groupId>
             <artifactId>plugin-mydashboard</artifactId>
             <version>[1.0.0-SNAPSHOT,)</version>
             <type>lutece-plugin</type>
         </dependency>
     </dependencies>
-
     <properties>
         <componentName>subscribe-mydashboard</componentName>
         <jiraProjectName>SUBMYDASH</jiraProjectName>
         <jiraComponentId>12263</jiraComponentId>
     </properties>
     <scm>
-        <connection>scm:svn:http://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/module-subscribe-mydashboard</connection>
-        <developerConnection>scm:svn:https://dev.lutece.paris.fr/svn/lutece/portal/trunk/plugins/cms/module-subscribe-mydashboard</developerConnection>
-        <url>http://dev.lutece.paris.fr/viewvc/lutece/portal/trunk/plugins/cms/module-subscribe-mydashboard</url>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-cms-module-subscribe-mydashboard.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-cms-module-subscribe-mydashboard.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-cms-module-subscribe-mydashboard.git</url>
     </scm>
 </project>
